@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3062747c-f59b-4aef-a8b8-e7eb634c3631" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZVisuNeH1HkZc1eAr094I0Ngt4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/G53DIA-src" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.MultiEvaluator">
+    <configuration name="MultiEvaluator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uk.ac.nott.cs.g53dia.multisimulator.MultiEvaluator" />
+      <module name="G53DIA Litter MultiAgent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.ac.nott.cs.g53dia.multisimulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uk.ac.nott.cs.g53dia.multisimulator.MultiSimulator" />
+      <module name="G53DIA Litter MultiAgent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uk.ac.nott.cs.g53dia.multisimulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MultiEvaluator" />
+        <item itemvalue="Application.MultiSimulator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3062747c-f59b-4aef-a8b8-e7eb634c3631" name="Default Changelist" comment="" />
+      <created>1584930871720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584930871720</updated>
+      <workItem from="1584930877532" duration="7949000" />
+      <workItem from="1585028191545" duration="19500000" />
+      <workItem from="1585108347287" duration="9244000" />
+      <workItem from="1585201888855" duration="14017000" />
+      <workItem from="1585287946350" duration="7511000" />
+      <workItem from="1585462780637" duration="1043000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="767" y="442" width="376" height="237" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584930917730">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="767" y="442" width="376" height="237" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1584930917730" />
+    <state x="690" y="258" width="530" height="605" key="FileChooserDialogImpl" timestamp="1584932112640">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="690" y="258" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1584932112640" />
+    <state width="1862" height="259" key="GridCell.Tab.0.bottom" timestamp="1585463828106">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="259" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1585463828106" />
+    <state width="1862" height="259" key="GridCell.Tab.0.center" timestamp="1585463828105">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="259" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1585463828105" />
+    <state width="1862" height="259" key="GridCell.Tab.0.left" timestamp="1585463828104">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="259" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1585463828104" />
+    <state width="1862" height="259" key="GridCell.Tab.0.right" timestamp="1585463828105">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="259" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1585463828105" />
+    <state width="1862" height="321" key="GridCell.Tab.1.bottom" timestamp="1585222675985">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="321" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1585222675985" />
+    <state width="1862" height="321" key="GridCell.Tab.1.center" timestamp="1585222675984">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="321" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1585222675984" />
+    <state width="1862" height="321" key="GridCell.Tab.1.left" timestamp="1585222675984">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="321" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1585222675984" />
+    <state width="1862" height="321" key="GridCell.Tab.1.right" timestamp="1585222675985">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1862" height="321" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1585222675985" />
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1585109191848">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1585109191848" />
+    <state x="539" y="45" key="search.everywhere.popup" timestamp="1584932084873">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="539" y="45" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1584932084873" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="cellPoints" language="JAVA" />
+        <watch expression="stateList" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
