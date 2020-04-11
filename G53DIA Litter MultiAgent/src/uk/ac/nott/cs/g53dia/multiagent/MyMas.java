@@ -3,10 +3,14 @@ import uk.ac.nott.cs.g53dia.multilibrary.*;
 
 import java.util.*;
 
+/**
+ * This is the class that extends the MAS class.
+ *
+ */
 public class MyMas extends MAS {
 
     /** 
-     * Number of agents in the MAS (this is just an **example**, not a requirement).
+     * Number of agents in the MAS.
      */
     private static int MAS_SIZE = 2;
 

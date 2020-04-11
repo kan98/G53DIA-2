@@ -6,15 +6,10 @@ import java.util.List;
 import uk.ac.nott.cs.g53dia.multilibrary.*;
 
 /**
- * A simple example LitterAgent
- * 
- * @author Julian Zappala
- */
-/*
- * Copyright (c) 2011 Julian Zappala
- * 
- * See the file "license.terms" for information on usage and redistribution of
- * this file, and for a DISCLAIMER OF ALL WARRANTIES.
+ * This is the main agent class which extends the LitterAgent class.
+ *
+ * The class uses the other classes in the agent package to output appropriate actions for the agent.
+ *
  */
 public class MyLitterAgent extends LitterAgent {
 	public MyLitterAgent(int direction, SharedKnowledge sharedKnowledge){
@@ -51,6 +46,13 @@ public class MyLitterAgent extends LitterAgent {
 		RECYCLING
 	}
 
+	/**
+	 * This method checks if the agent has completed the current action.
+	 * If the action is completed, the next state on the stateList will be set as the currentState.
+	 *
+	 * @param currentPoint The point object of the current cell the agent is residing in.
+	 *
+	 */
 	private void getNextState(Point currentPoint) {
 		if (!stateList.isEmpty()) {
 			if (stateList.get(0) != state.MOVE_TO_POINT) {
@@ -72,6 +74,13 @@ public class MyLitterAgent extends LitterAgent {
 		}
 	}
 
+	/**
+	 * This method is called by the simulator or evaluator in each time step.
+	 * This method passes the relevant data to the Deliberative class when it calls it for route planning..
+	 *
+	 * This method adds the bins and tasks into the relevant queues for the agent.
+	 *
+	 */
 	private void deliberativeRoutePlanning() {
 		boolean isEqualPosition = false;
 		if (!cellPoints.isEmpty()) {
@@ -104,8 +113,17 @@ public class MyLitterAgent extends LitterAgent {
 		}
 	}
 
+	/**
+	 * This method is called at every time step.
+	 * It stores new bins and stations it doesn't have saved into the relevant lists.
+	 * The lists get reset every ten time steps to keep them small and relevant to the agent's current location.
+	 *
+	 * @param timeStep The current time step the agent is working in.
+	 * @param view The 30x30 view scope of cells the agent can see.
+	 *
+	 */
 	private void storeCellInfo(Cell[][] view, long timeStep) {
-		if(timeStep % 2 == 0) {
+		if(timeStep % 10 == 0) {
 			wasteBins = new ArrayList<>();
 			recyclingBins = new ArrayList<>();
 			wasteStations = new ArrayList<>();
@@ -146,7 +164,7 @@ public class MyLitterAgent extends LitterAgent {
 			stateList.add(0, state.MOVE_TO_POINT);
 		}
 
-		if (timeStep % 1000 == 0) {
+		if (timeStep % 2500 == 0) {
 			System.out.println("timestep: " + timeStep + "; score = " + getScore());
 		}
 

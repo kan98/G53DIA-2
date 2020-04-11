@@ -7,6 +7,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This class handles the deliberative component of the agent.
+ *
+ * An object of the class is created in the MyLitterAgent to help plan actions for the agent.
+ *
+ */
 public class Deliberative {
 
     private Helpers helpers = new Helpers();
@@ -31,6 +37,14 @@ public class Deliberative {
      this.sharedKnowledge = sharedKnowledge;
     }
 
+    /**
+     * Goes through a list of cells of either waste or recycling bins and return a list of bins which aren't empty.
+     * Only adds the bin to the list if it's not in another agent's route.
+     *
+     * @param bins A list of Cell objects of either waste or recycling bins.
+     * @return A list of Cell objects of either waste or recycling bins that have non-empty tasks in them.
+     *
+     */
     private List<Cell> getBins (List<Cell> bins) {
         List<Cell> fullBins = new ArrayList<>();
 
@@ -49,12 +63,20 @@ public class Deliberative {
                             binToStation.put(bin, helpers.findClosest(bin.getPoint(), recyclingStations));
                         }
                     }
-                    binToStationDistance.put(bin, helpers.minDistance);
+                    binToStationDistance.put(bin, helpers.getMinDistance());
             }
         }
         return fullBins;
     }
 
+    /**
+     * This method is called by the senseAndAct method from the MyLitterAgent class for each time step.
+     * It gets all the bins that aren't empty and calls the getBestRoute method to plan the best route for the agent.
+     *
+     * The method will take the list of bins from the getBestRoute method and create actions for them to add to stateList.
+     * The method will also add a litter drop off action to the closest respective station into the stateList queue.
+     *
+     */
     protected void planRoute(Point currentLocation, int remainingCapacity,
                              MyLitterAgent.binType binType, List<Cell> currentCells, List<Cell> recyclingBins,
                              List<Cell> wasteBins, List<Cell> wasteStations, List<Cell> recyclingStations) {
@@ -80,6 +102,13 @@ public class Deliberative {
         }
     }
 
+    /**
+     * Recursive method that does a depth first search to output the best route for the agent.
+     *
+     * The output is a list of either recycling or waste bins that the search method can add actual agent states for.
+     * Output is stored in a global variable and not returned by the function.
+     *
+     */
     private void getBestRoute(List<Cell> bins, List<Cell> selectedBins, Point currentLocation,
                               int score, int cost, MyLitterAgent.binType binType) {
         float averageRatio = 0;
@@ -108,7 +137,7 @@ public class Deliberative {
                 List<Cell> tempBins = new ArrayList<>(bins);
                 tempBins.remove(bin);
 
-                if (score + tempScore < remainingCapacity && !tempBins.isEmpty()) {
+                if (score + tempScore < remainingCapacity && !tempBins.isEmpty() && tempSelectedBins.size() < 5) {
                     getBestRoute(tempBins, tempSelectedBins, bin.getPoint(), score + tempScore,
                             cost + tempCost, binType);
                 }
